@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --body-font: "Lato", sans-serif;
+  --big-font-size: 2rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 0.8rem;
+  --strong-font-weight: 900;
+  --regular-font-weight: 600;
+}
+
+:root {
+  --gray-color: rgb(105, 105, 105);
+  --second-color: #e03f7a;
+  --third-color: #b9569b;
+  --hover-color: #a82d5a;
+}
+
+:root {
+  --border: 5px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--regular-font-weight);
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/***HEADER***/
+header {
+  top: 0;
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+#header {
+  position: fixed;
+}
+#header-img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 150px;
+}
+nav {
+  margin: 0 10px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+ol {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.nav-link:hover {
+  border-bottom: var(--second-color) 0.2em solid;
+}
+/***HERO***/
+#hero {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 80%;
+}
+#hero > h2 {
+  font-size: var(--big-font-size);
+  font-weight: var(--strong-font-weight);
+  color: var(--second-color);
+}
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--third-color);
+  border-radius: var(--border);
+}
+#hero input[type="submit"] {
+  max-width: 180px;
+  width: 100%;
+  height: 2rem;
+  margin: 15px;
+  border: 0px;
+}
+/***CONTENT***/
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+#features {
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
+
+.grid > h2 {
+  margin-bottom: 5px;
+  color: var(--third-color);
+}
+
+.grid > p {
+  color: var(--gray-color);
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+}
+#video {
+  max-width: 600px;
+  width: 100%;
+}
+#pricing {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 1);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.product > .level {
+  background-color: var(--third-color);
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 10px;
+  color: var(--third-color);
+  font-weight: 900;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  font-weight: 900;
+  width: 30%;
+}
+
+ol > li {
+  color: var(--gray-color);
+}
+
+footer {
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  margin-top: 2em;
+  background-color: rgb(250, 198, 255);
+  padding: 1em;
+  font-size: var(--small-font-size);
+}
+
+#footer-link {
+  text-decoration: none;
+  margin-left: 10px;
+  color: var(--second-color);
+}
+#footer-link:hover {
+  color: var(--hover-color);
+  transition: color 0.4s;
+}
+
+.footer-info {
+  display: flex;
+}
+/***COMPONENTS***/
+.button {
+  font-weight: var(--strong-font-weight);
+  background-color: var(--second-color);
+  text-transform: uppercase;
+  color: whitesmoke;
+  border-radius: var(--border);
+  cursor: pointer;
+  height: 2.5em;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+  transition: background-color 0.4s;
+}
